@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: SpringSleuth
+  zipkin:
+    enabled: true
+    service.name: my-service
+    sender.type: web
+    base-url: http://localhost:9411
+  sleuth:
+    enabled: true
+    sampler:
+      probability: 1.0
